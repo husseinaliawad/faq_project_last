@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        /* Navigation Links */
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background: #0056b3;
+        }
+
+        /* Students Section */
+        .students-section {
+            margin-top: 30px;
+        }
+
+        .students-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .students-section li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Page Title -->
+        <h1>Welcome to the FAQ App</h1>
+        <p>Navigate through the application using the links below:</p>
+
+        <!-- Navigation Links -->
+        <div class="navigation">
+            <a href="{% url 'add' %}">Add FAQ</a>
+            <a href="{% url 'search' %}">Search FAQs</a>
+        </div>
+
+        <!-- Team Members Section -->
+        <div class="students-section">
+            <h2>Team Members</h2>
+            <ul>
+                <li>Lana (ID: 130055)</li>
+                <li>Rimah (ID: 124210)</li>
+                <li>Azhar (ID: 137796)</li>
+                <li>Osama (ID: 204263)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

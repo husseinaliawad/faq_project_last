@@ -1,0 +1,36 @@
+# Python  
+__pycache__/  
+*.py[cod]  
+*.pyo  
+*.pyd  
+
+# Virtual Environment  
+venv/  
+env/  
+.venv/  
+
+# Database  
+db.sqlite3  
+
+# Django migrations (optional, if you want to ignore them)  
+*/migrations/*  
+!*/migrations/__init__.py  
+
+# Static files (if collected separately)  
+staticfiles/  
+
+# IDE specific files  
+.vscode/  
+.idea/  
+
+# Jupyter Notebook checkpoints  
+.ipynb_checkpoints/  
+
+# Other common files  
+*.log  
+*.pot  
+*.pyc  
+*.pdb  
+*.egg-info/  
+dist/  
+build/

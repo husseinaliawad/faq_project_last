@@ -1,0 +1,25 @@
+<!-- faq_app/templates/faq_app/search_results.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for: "{{ query }}"</h1>
+
+    {% if results %}
+        <ul>
+            {% for faq in results %}
+                <li>
+                    <strong>{{ faq.question }}</strong><br>
+                    <p>{{ faq.answer }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</body>
+</html>
